@@ -6,7 +6,7 @@ from langserve import add_routes
 from dotenv import load_dotenv
 from langserve import add_routes
 from langchain.prompts import ChatPromptTemplate
-import openai 
+import openai  
 import os
 #############
 os.environ["OPENAI_API_TYPE"]       = ""
@@ -20,7 +20,7 @@ openai.api_version  = os.environ["OPENAI_API_VERSION"]
 
 llm= AzureChatOpenAI(deployment_name='' , verbose=False , temperature=0)
 
-
+ 
 app = FastAPI(
     title="LangChain Server",
     version="1.0",
